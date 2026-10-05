@@ -1,0 +1,11 @@
+{
+  "name": "medtech-opportunity-radar",
+  "owner": { "name": "Kishlen-C" },
+  "plugins": [
+    {
+      "name": "medtech-opportunity-radar",
+      "source": "./",
+      "description": "Opportunity radar agent: TinyFish monitors + Notion + scheduled digest and on-demand company briefs."
+    }
+  ]
+}

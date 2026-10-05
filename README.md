@@ -43,7 +43,19 @@ Agent costs $0.016 per step. At this configuration the monitors cost roughly **$
 - Inferences are labelled `my read`.
 - It does not assume your eligibility (work rights, year of study). It states what each source says and flags conflicts.
 
-## Setup
+## Install (Claude Code plugin)
+
+```
+/plugin marketplace add Kishlen-C/Medtech-Opportunity-radar
+/plugin install medtech-opportunity-radar@medtech-opportunity-radar
+```
+
+Then ask Claude: **"set up the radar"**. The `radar-setup` skill asks about your field and criteria, creates the Notion workspace,
+registers the TinyFish monitors, and schedules the two agents. Requires the TinyFish and Notion connectors.
+The `radar-weekly-digest` and `radar-brief` skills can also be run by hand at any time.
+Status: the plugin structure has not been install-tested end to end; the underlying agents have run live.
+
+## Manual setup
 
 You need: a TinyFish account, a Notion workspace, and Claude with the TinyFish and Notion connectors and scheduled tasks.
 

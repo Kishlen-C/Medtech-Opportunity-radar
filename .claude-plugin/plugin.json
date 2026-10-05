@@ -1,0 +1,7 @@
+{
+  "name": "medtech-opportunity-radar",
+  "description": "Watches the web for placements, studentships and hackathons with TinyFish Monitor, Search and Fetch, scores them against your criteria in Notion, and writes application briefs on demand.",
+  "version": "0.1.0",
+  "author": { "name": "Kishlen-C" },
+  "license": "MIT"
+}
