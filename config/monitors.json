@@ -1,0 +1,145 @@
+{
+  "timezone": "Europe/London",
+  "note": "Create each entry with TinyFish create_monitor. schedule_cron must be prefixed with CRON_TZ=Europe/London. Replace sources with ones relevant to you.",
+  "monitors": [
+    {
+      "name": "UCL MPBE summer studentships",
+      "type": "fetch",
+      "config": {
+        "url": "https://www.ucl.ac.uk/engineering/medical-physics-biomedical-engineering/vacancies/mpbe-summer-studentship-opportunities",
+        "format": "markdown"
+      },
+      "schedule_cron": "CRON_TZ=Europe/London 0 7 * * *",
+      "purpose": "New or changed summer studentship opportunities, application windows, deadlines or eligibility. Ignore navigation, footer, cookie banner and layout changes.",
+      "tier": "1 UCL and NHS"
+    },
+    {
+      "name": "UCL MPBE placements and internships",
+      "type": "fetch",
+      "config": {
+        "url": "https://www.ucl.ac.uk/engineering/medical-physics-biomedical-engineering/study/careers-and-employability/placements-and-internships",
+        "format": "markdown"
+      },
+      "schedule_cron": "CRON_TZ=Europe/London 5 7 * * *",
+      "purpose": "New placements, internships, studentships or application deadlines for UCL MPBE undergraduates. Ignore navigation, footer and layout changes.",
+      "tier": "1 UCL and NHS"
+    },
+    {
+      "name": "OUH Medical Physics and Clinical Engineering placements",
+      "type": "fetch",
+      "config": {
+        "url": "https://www.ouh.nhs.uk/medphys/working-for-us/",
+        "format": "markdown"
+      },
+      "schedule_cron": "CRON_TZ=Europe/London 10 7 * * *",
+      "purpose": "Opening or closing of student shadowing placements and application windows. Ignore navigation and footer changes.",
+      "tier": "1 UCL and NHS"
+    },
+    {
+      "name": "Imperial UROP",
+      "type": "fetch",
+      "config": {
+        "url": "https://www.imperial.ac.uk/students/undergraduate-research-opportunities-programme/",
+        "format": "markdown"
+      },
+      "schedule_cron": "CRON_TZ=Europe/London 15 7 * * *",
+      "purpose": "Application windows, deadlines or eligibility for external undergraduates on the Undergraduate Research Opportunities Programme. Ignore layout changes.",
+      "tier": "1 UCL and NHS"
+    },
+    {
+      "name": "Medtronic UK early careers",
+      "type": "fetch",
+      "config": {
+        "url": "https://www.medtronic.com/en-gb/our-company/careers/early-careers.html",
+        "format": "markdown"
+      },
+      "schedule_cron": "CRON_TZ=Europe/London 20 7 * * *",
+      "purpose": "New internship, placement or early-careers programmes and application dates. Ignore video, navigation and footer changes.",
+      "tier": "2 Companies"
+    },
+    {
+      "name": "Siemens Healthineers UK industrial placements",
+      "type": "fetch",
+      "config": {
+        "url": "https://www.siemens-healthineers.com/en-uk/careers/industrial-placements",
+        "format": "markdown"
+      },
+      "schedule_cron": "CRON_TZ=Europe/London 25 7 * * *",
+      "purpose": "Opening of 12-month industrial placement or summer internship applications, with dates. Ignore layout changes.",
+      "tier": "2 Companies"
+    },
+    {
+      "name": "MedTech Hack",
+      "type": "fetch",
+      "config": {
+        "url": "https://www.medtechhack.com/",
+        "format": "markdown"
+      },
+      "schedule_cron": "CRON_TZ=Europe/London 40 6 * * 1",
+      "purpose": "New dates, applications or registration opening for the medical device hackathon. Ignore layout changes.",
+      "tier": "4 Competitions"
+    },
+    {
+      "name": "UK student hackathons 2027 season",
+      "type": "fetch",
+      "config": {
+        "url": "https://hackathons.org.uk/events/2027/",
+        "format": "markdown"
+      },
+      "schedule_cron": "CRON_TZ=Europe/London 45 6 * * 1",
+      "purpose": "New health, medical or biotech-related hackathons and registration dates. Ignore unrelated events.",
+      "tier": "4 Competitions"
+    },
+    {
+      "name": "Bright Network industrial placement deadlines 2027",
+      "type": "fetch",
+      "config": {
+        "url": "https://www.brightnetwork.co.uk/application-deadlines/jobs/industrial-placements/engineering-energy-infrastructure/",
+        "format": "markdown"
+      },
+      "schedule_cron": "CRON_TZ=Europe/London 55 6 * * 1",
+      "purpose": "New engineering or biomedical placement deadlines and employers listed for 2027. Report new entries only.",
+      "tier": "3 Aggregators"
+    },
+    {
+      "name": "Prosple biomedical engineering internships UK",
+      "type": "fetch",
+      "config": {
+        "url": "https://uk.prosple.com/biomedical-engineering-internships-uk",
+        "format": "markdown"
+      },
+      "schedule_cron": "CRON_TZ=Europe/London 0 7 * * 1",
+      "purpose": "New biomedical engineering internship listings in the UK. Report new listings only.",
+      "tier": "3 Aggregators"
+    },
+    {
+      "name": "Search: medtech summer internship 2027 UK",
+      "type": "search",
+      "config": {
+        "query": "medical device biomedical engineering undergraduate summer internship 2027 UK apply",
+        "result_limit": 10
+      },
+      "schedule_cron": "CRON_TZ=Europe/London 30 6 * * 1",
+      "purpose": "New medtech or medical device summer internship and placement postings for UK undergraduates in biomedical engineering",
+      "tier": "3 Aggregators"
+    },
+    {
+      "name": "Search: industrial placement 2027 medtech UK",
+      "type": "search",
+      "config": {
+        "query": "medtech healthtech industrial placement 2027 UK biomedical engineering students applications open",
+        "result_limit": 10
+      },
+      "schedule_cron": "CRON_TZ=Europe/London 35 6 * * 1",
+      "purpose": "New 12-month industrial placement or research studentship listings in medtech, medical imaging and healthtech in the UK",
+      "tier": "3 Aggregators"
+    }
+  ],
+  "known_blocked": [
+    {
+      "name": "Gradcracker bioengineering placements",
+      "url": "https://www.gradcracker.com/search/science/bioengineering-biotechnology-work-placements-internships",
+      "reason": "Returns HTTP 403 to automated fetches; monitor registered as failed and was cancelled. Not worked around."
+    }
+  ]
+}
