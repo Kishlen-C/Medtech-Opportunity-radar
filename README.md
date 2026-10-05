@@ -55,7 +55,7 @@ You need: a TinyFish account, a Notion workspace, and Claude with the TinyFish a
    Claude scheduled task with the cron shown at the top of the file.
 4. **Use it.** Tick **Prepare brief** on any opportunity. The status goes Requested -> Ready.
 
-## Known limitations (honest list)
+## Known limitations
 
 - **The "button" is a checkbox.** A polling agent picks it up, so a brief takes up to ~3 hours. A real Notion button needs an in-app automation.
 - **Static career pages are weak sources.** Many large employers load listings through ATS portals that a page-change monitor cannot see. Search monitors and aggregators cover the gap.
